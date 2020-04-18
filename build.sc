@@ -21,7 +21,7 @@ object mylib extends CommonSpinalModule with PublishModule {
     description = "Simple SpinalHDL Module",
     organization = "com.github.typingArtist",
     url = "https://github.com/typingArtist/SpinalTemplateMill",
-    licenses = Seq(License.MIT),
+    licenses = Seq(License.`LGPL-3.0-or-later`),
     versionControl = VersionControl.github("typingArtist", "SpinalTemplateMill"),
     developers = Seq(
       Developer("typingArtist", "Matthias Wächter", "https://github.com/typingArtist"),
