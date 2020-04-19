@@ -13,7 +13,7 @@ trait CommonSpinalModule extends ScalaModule {
   def scalacPluginIvyDeps = Agg(ivy"com.github.spinalhdl::spinalhdl-idsl-plugin:1.4.0")
 }
 
-object mylib extends CommonSpinalModule with PublishModule {
+object simple extends CommonSpinalModule with PublishModule {
   def mainClass = Some("mylib.MyTopLevelSim")
   def publishVersion = "0.0.1-SNAPSHOT"
 

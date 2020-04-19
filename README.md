@@ -18,16 +18,16 @@ $ cd SpinalTemplateMill
 1. Choose target to run or build:
   - With Verilator installed, run the simulation as the default target:
   ```sh
-  $ mill mylib.run
+  $ mill simple.run
   ```
   You can inspect the Verilog output afterwords in ``./simWorkspace/MyTopLevel/rtl/MyTopLevel.v``. Run ``gtkwave ./simWorkspace/test.vcd`` to inspect the waveforms.
   - Or just generate Verilog output:
   ```sh
-  $ mill mylib.runMain mylib.MyTopLevelVerilog
+  $ mill simple.runMain mylib.MyTopLevelVerilog
   ```
   The generated Verilog output is written to ``./MyTopLevel.v``.
   - Or just generate VHDL output:
   ```sh
-  $ mill mylib.runMain mylib.myTopLevelVhdl
+  $ mill simple.runMain mylib.myTopLevelVhdl
   ```
   The generated VHDL output is written to ``./MyTopLevel.vhd``.
