@@ -1,5 +1,6 @@
 # SpinalTemplateMill
-A simple SpinalHDL demo project based on the [Mill](https://www.lihaoyi.com/mill/) build tool.
+A simple SpinalHDL demo project based on [SpinalTemplateSbt](https://github.com/SpinalHDL/SpinalTemplateSbt)
+ported to the [Mill](https://www.lihaoyi.com/mill/) build tool.
 
 ## Setup
 
