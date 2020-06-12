@@ -21,7 +21,7 @@ $ cd SpinalTemplateMill
   ```sh
   $ mill simple.run
   ```
-  You can inspect the Verilog output afterwords in ``./simWorkspace/MyTopLevel/rtl/MyTopLevel.v``. Run ``gtkwave ./simWorkspace/test.vcd`` to inspect the waveforms.
+  You can inspect the Verilog output afterwords in ``./simWorkspace/MyTopLevel/rtl/MyTopLevel.v``. Run ``gtkwave ./simWorkspace/MyTopLevel/test.vcd`` to inspect the waveforms.
   - Or just generate Verilog output:
   ```sh
   $ mill simple.runMain mylib.MyTopLevelVerilog
