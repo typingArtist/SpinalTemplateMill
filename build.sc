@@ -7,10 +7,10 @@ trait CommonSpinalModule extends ScalaModule {
   def scalacOptions = Seq("-unchecked", "-deprecation", "-feature")
 
   def ivyDeps = Agg(
-    ivy"com.github.spinalhdl::spinalhdl-core:1.4.0",
-    ivy"com.github.spinalhdl::spinalhdl-lib:1.4.0",
+    ivy"com.github.spinalhdl::spinalhdl-core:1.4.1",
+    ivy"com.github.spinalhdl::spinalhdl-lib:1.4.1",
   )
-  def scalacPluginIvyDeps = Agg(ivy"com.github.spinalhdl::spinalhdl-idsl-plugin:1.4.0")
+  def scalacPluginIvyDeps = Agg(ivy"com.github.spinalhdl::spinalhdl-idsl-plugin:1.4.1")
 }
 
 object simple extends CommonSpinalModule with PublishModule {
