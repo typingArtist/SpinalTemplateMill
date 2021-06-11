@@ -2,15 +2,15 @@
 import mill._, scalalib._, publish._
 
 trait CommonSpinalModule extends ScalaModule {
-  def scalaVersion = "2.12.11"
+  def scalaVersion = "2.12.14"
 
   def scalacOptions = Seq("-unchecked", "-deprecation", "-feature")
 
   def ivyDeps = Agg(
-    ivy"com.github.spinalhdl::spinalhdl-core:1.4.1",
-    ivy"com.github.spinalhdl::spinalhdl-lib:1.4.1",
+    ivy"com.github.spinalhdl::spinalhdl-core:1.4.3",
+    ivy"com.github.spinalhdl::spinalhdl-lib:1.4.3",
   )
-  def scalacPluginIvyDeps = Agg(ivy"com.github.spinalhdl::spinalhdl-idsl-plugin:1.4.1")
+  def scalacPluginIvyDeps = Agg(ivy"com.github.spinalhdl::spinalhdl-idsl-plugin:1.4.3")
 }
 
 object simple extends CommonSpinalModule with PublishModule {
